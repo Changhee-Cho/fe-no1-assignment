@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@media(min-width:1900px) {
+    .main>.banner>.videowrap>.inner-blur {
+        box-shadow:
+            inset 300px 0px 100px 0px rgba(0, 0, 0, 1),
+            inset -300px 0px 100px 0px rgba(0, 0, 0, 1) !important;
+    }
+}
+
+@media(max-width:1300px) {
+    .item {
+        margin: 10px 20px;
+    }
+}
+
+@media(max-width:1135px) {
+    .main>.banner>.letter {
+        margin-right: 10px !important;
+    }
+
+    nav {
+        display: none !important;
+
+    }
+
+    .backdesign {
+        margin-top: 170px !important;
+    }
+
+    .banner {
+        margin-top: 50px;
+    }
+
+    .main>.banner>.videowrap>.inner-blur {
+        box-shadow:
+            inset 100px 0px 50px 0px rgba(0, 0, 0, 1),
+            inset -100px 0px 50px 0px rgba(0, 0, 0, 1) !important;
+    }
+
+    .item {
+        margin: 10px 20px;
+    }
+
+    .header {
+        margin-top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header>a {
+        margin-bottom: 300px;
+    }
+
+    .header .logo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header .searchbox {
+        width: 90% !important;
+    }
+
+    .header>.searchbox>form {
+        width: 100% !important;
+    }
+
+    .header form input {
+        font-size: 20px !important;
+    }
+
+    .header .gobookmark {
+        width: 60px !important;
+    }
+
+    .globalrankingtitle {
+        margin-top: 30px !important;
+    }
+}
+
+@media(max-width:1150px) {
+    .main>.banner>.videowrap>.inner-blur {
+        box-shadow:
+            inset 10px 0px -10px 0px rgba(0, 0, 0, 1),
+            inset -10px 0px -10px 0px rgba(0, 0, 0, 1) !important;
+    }
+
+    .modalbox {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 200;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .modalbox>.modal {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        background-color: white;
+        overflow: hidden;
+        padding-bottom: 70px;
+    }
+
+    .modalbox>.modal>.modalexit {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .modalbox>.modal>.modalexit:hover {
+        cursor: pointer;
+    }
+
+    .modalbox>.modal>.modal_contents {
+        width: 100%;
+        padding: 25px;
+
+    }
+
+    .modalbox>.modal>.modal_contents>h1 {
+        margin-bottom: 15px;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .modalbox>.modal>.modal_contents>.center {
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y: auto;
+        display: flex;
+        width: 100%;
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.modalposter {
+        width: 50%;
+        height: auto !important;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.content {
+        margin-top: -10px;
+        width: 100%;
+        height: auto !important;
+        display: inline-block;
+        overflow-y: initial !important;
+
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.content hr {
+        border: 1px solid rgba(66, 66, 66, 0.3);
+        width: 100%;
+
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.content>p {
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+
+    .modalbox>.modal>.modal_contents>.center>.content>h4 {
+        display: inline-block;
+        color: rgb(207, 111, 0);
+        width: 90px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.content>span {
+        font-size: 20px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .modalbox>.modal>.modal_contents>.center>.content>.overview {
+        width: 100%;
+        height: auto;
+        overflow-y: initial !important;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans Korean", sans-serif;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.modalbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 200;
+    position: fixed;
+    display: none;
+}
+
+.modalbox>.modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.modalbox>.modal>.bookmark {
+    position: absolute;
+    top: 31px;
+    right: 70px;
+    width: 38px;
+    height: 38px;
+}
+
+.modalbox>.modal>.bookmark:hover {
+    cursor: pointer;
+}
+
+.modalbox>.modal>.modalexit {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.modalbox>.modal>.modalexit:hover {
+    cursor: pointer;
+}
+
+.modalbox>.modal>.modal_contents {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    padding-bottom: 100px;
+}
+
+.modalbox>.modal>.modal_contents>h1 {
+    margin-bottom: 15px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modalbox>.modal>.modal_contents>.center {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 10px;
+}
+
+.modalbox>.modal>.modal_contents>.center>.modalposter {
+    height: 85%;
+    margin-right: 20px;
+}
+
+.modalbox>.modal>.modal_contents>.center>.content {
+    margin-top: -10px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: inline-block;
+}
+
+.modalbox>.modal>.modal_contents>.center>.content hr {
+    border: 1px solid rgba(66, 66, 66, 0.3);
+    width: 100%;
+
+}
+
+.modalbox>.modal>.modal_contents>.center>.content>p {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
+.modalbox>.modal>.modal_contents>.center>.content>h4 {
+    display: inline-block;
+    color: rgb(207, 111, 0);
+    width: 90px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.modalbox>.modal>.modal_contents>.center>.content>span {
+    font-size: 20px;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modalbox>.modal>.modal_contents>.center>.content>.overview {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    margin-bottom: 10;
+}
+
+.backdesign {
+    background-color: rgb(0, 0, 0);
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contents {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+}
+
+.header>.logo {
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>.logo>a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>.logo>a>.logoicon {
+    width: 40px;
+}
+
+.header>.logo>a>span {
+    color: red;
+}
+
+.header>.searchbox {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>.searchbox>form {
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    margin-right: 10px;
+}
+
+.header>.searchbox>form>#search {
+    width: 90%;
+    height: 35px;
+    font-size: 1.3vw;
+    border: 0;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.header>.searchbox>form>#search:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.header>.searchbox>form>#searchbtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.header .gobookmark {
+    width: 50px !important;
+}
+
+.header .gobookmark:hover {
+    cursor: pointer;
+}
+
+.nav {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav>ul>li {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.main>.banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main>.banner>.videowrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>.banner>.videowrap>video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main>.banner>.videowrap>.inner-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow:
+        inset 230px 0px 100px 0px rgba(0, 0, 0, 1),
+        inset -230px 0px 100px 0px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.main>.banner>.letter {
+    margin-right: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    font-family: "Jua", sans-serif;
+}
+
+.main>.banner>.letter>.sentence {
+    font-size: 35px;
+}
+
+.main>.banner>.letter>.author {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.resultnotice {
+    text-align: center;
+    color: #c95000;
+    font-size: 1.7vw;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultnotice img {
+    width: 100%;
+}
+
+.main>.article {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main>.globalrankingtitle {
+    margin-top: 10px;
+    margin-left: 2vw;
+    margin-bottom: -30px;
+    font-size: 25px;
+    color: #c95000;
+}
+
+.main>.article>a {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.main>.article>.item {
+    margin: 5px;
+    width: 280px;
+    height: 545px;
+    padding: 15px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 15px;
+    position: relative;
+    font-size: 18px;
+}
+
+.main>.article>.item:hover {
+    background-color: rgba(255, 253, 149, 0.863);
+    cursor: pointer;
+}
+
+.main>.article>.item>img {
+    width: 100%;
+    height: 340px;
+}
+
+.main>.article>.item>h3 {
+    width: 100%;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #c95000
+}
+
+.main>.article>.item>h4 {
+    width: 100%;
+    margin-top: 2px;
+
+}
+
+.main>.article>.item>h5 {
+    width: 100%;
+    margin-top: 2px;
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.main>.article>.item>.rank {
+    position: absolute;
+    left: 20px;
+    top: 285px;
+    z-index: 2;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #ddd;
+}

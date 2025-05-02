@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화정보 사이트, 무비온</title>
+    <link rel="icon" href="assets/imgs/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/main.js" type="module"></script>
+    <script src="script/modal.js" type="module"></script>
+</head>
+
+<body>
+    <div class="modalbox" id="modalbox">
+        <div class="modal">
+            <img class="modalexit" src="assets/imgs/exit.svg" alt="나가기 버튼">
+            <img class="bookmark" src="assets/imgs/bookmark_before.svg" alt="북마크버튼">
+            <div class="modal_contents">
+            </div>
+        </div>
+    </div>
+    <div class="backdesign" id="backdesign"></div>
+    <div class="contents">
+        <header class="header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img class="logoicon" src="assets/imgs/logo.svg" alt="로고">&nbsp;
+                    무비<span>온</span>
+                </a>
+            </h1>
+            <div class="searchbox">
+                <form id="form">
+                    <input type="text" id="search" name="query" placeholder="어떤 영화를 찾으세요?" autocomplete="off">
+                    <button type="submit" id="searchbtn"><img src="./assets/imgs/search_icon.svg" alt="검색"></button>
+                </form>
+                <img class='gobookmark' src="assets/imgs/bookmark_header.svg" alt="북마크 보기">
+            </div>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="https://www.netflix.com/kr/" target="_blank">Netflix</a></li>
+                <li><a href="https://watcha.com/browse/theater" target="_blank">WATCHA</a></li>
+                <li><a href="https://www.tving.com/onboarding" target="_blank">TVING</a></li>
+                <li><a href="https://play.coupang.com/" target="_blank">Coupang play</a></li>
+                <li><a href="https://laftel.net/" target="_blank">LAFTEL</a></li>
+                <li><a href="https://www.cgv.co.kr/" target="_blank">CGV</a></li>
+                <li><a href="https://www.lottecinema.co.kr/" target="_blank">LOTTE CINEMA</a></li>
+                <li><a href="https://www.megabox.co.kr/" target="_blank">MEGABOX</a></li>
+            </ul>
+        </nav>
+        <main class="main" id="main">
+            <div class="banner" id="banner">
+                <div class="videowrap">
+                    <video autoplay muted loop playsinline src="assets/video/banner_video.mp4"></video>
+                    <div class="inner-blur"></div>
+                </div>
+                <div class="letter">
+                    <p class="sentence">새로운 영화는 신선함을 주고<br>오래된 영화는 향수를 준다</p>
+                    <span class="author">강원대 FE_조창희</span>
+                </div>
+            </div>
+            <h2 class="globalrankingtitle" id="globalrankingtitle">전 세계 인기 순위 Top 20</h2>
+            <article class="article" id="datainput">
+
+            </article>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 강원대 FE_조창희</p>
+            <p>본 홈페이지는 <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB</a> API를
+                사용하지만, TMDB와 공식적으로 연결되어 있지 않습니다.</p>
+            <p>본 프로젝트는 카카오테크캠퍼스 3기 1단계 과제1 수행을 위해 제작되었습니다.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
